@@ -1,0 +1,168 @@
+/* ================================
+   🌙 FUNDO DO SITE — GRADIENTE FORÇADO (2 cores)
+   ================================ */
+   html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: linear-gradient(180deg, #00070c 0%, #054461 100%) !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    color: #cfe9ff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* ================================
+     🛒 CARRINHO LATERAL
+     ================================ */
+  .cart-panel {
+    position: fixed;
+    top: 0;
+    right: -390px;
+    width: 350px;
+    height: 100%;
+    background-color: #021827;
+    border-left: 2px solid #0b6bd6;
+    padding: 20px;
+    box-shadow: -4px 0 12px #0009;
+    transition: right .35s ease;
+    z-index: 99999;
+    color: #cfe9ff;
+  }
+  
+  .cart-title {
+    font-size: 22px;
+    margin-bottom: 16px;
+    color: #0b6bd6;
+    font-weight: bold;
+  }
+  
+  .close-btn {
+    background: #720000;
+    border: 1px solid #b80000;
+    color: #fff;
+    padding: 4px 10px;
+    float: right;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .close-btn:hover {
+    background: #b80000;
+  }
+  
+  /* Lista do carrinho */
+  .cart-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 60%;
+    overflow-y: auto;
+    padding-right: 3px;
+    scrollbar-width: none;
+  }
+  
+  .cart-list::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .cart-list li {
+    background-color: #041a33;
+    border: 1px solid #0b3a62;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  /* Botão remover item */
+  .btn-remover {
+    background: #8b0000;
+    color: white;
+    border: 1px solid #cc0000;
+    padding: 5px 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .btn-remover:hover {
+    background: #cc0000;
+  }
+  
+  /* Total */
+  .cart-total {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #91d4ff;
+    font-weight: bold;
+  }
+  
+  /* Finalizar compra */
+  .buy-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background: #0b6bd6;
+    border: 1px solid #1e2f8f;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .3s;
+  }
+  
+  .buy-btn:hover {
+    background: #094d94;
+  }
+  
+  /* ================================
+     🛍️ BOTÃO DOS PRODUTOS
+     ================================ */
+  .btn-produto {
+    background-color: #041a33;
+    border: 2px solid #0b6bd6;
+    color: #cfe9ff;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.25s ease;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    box-shadow: 0 0 8px #0005;
+  }
+  
+  .btn-produto:hover {
+    background-color: #0b6bd6;
+    color: #ffffff;
+    border-color: #1e2f8f;
+    box-shadow: 0 0 12px #0b6bd6;
+  }
+  
+  /* ================================
+     🛍️ CARTÕES DOS PRODUTOS
+     ================================ */
+  .produto-card {
+    background: #021827;
+    border: 2px solid #0b6bd6;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .produto-card h3 {
+    color: #cfe9ff;
+  }
+  
+  .produto-card p {
+    color: #91d4ff;
+  }

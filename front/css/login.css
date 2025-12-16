@@ -1,0 +1,115 @@
+/* ===========================
+   LOGIN PAGE 2
+   =========================== */
+
+   .login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #03091b;
+  }
+  
+  .login-box {
+    background: #041a33;
+    padding: 40px 35px;
+    border-radius: 12px;
+    width: 360px;
+    box-shadow: 0 0 18px rgb(0, 89, 255);
+    border: 1px solid #0b3a62;
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    color: #e6f0ff;
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+  
+  .login-sub {
+    color: #9fc7ff;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .login-form label {
+    color: #cfe9ff;
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+  
+  .login-form input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #1a6fb9;
+    background-color: #021827;
+    color: #e6f0ff;
+    margin-bottom: 20px;
+  }
+  
+  .login-form input:focus {
+    outline: none;
+    border-color: #1b7bd6;
+  }
+  
+  .login-btn {
+    background-color: #0b6bd6;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  
+  .login-btn:hover {
+    background-color: #094d94;
+  }
+  
+  .forgot {
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    color: #9fc7ff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .forgot:hover {
+    color: #1b7bd6;
+  }
+  
+  /* BOTÃO VOLTAR AO SITE – FICA EMBAIXO */
+  .back-btn {
+    margin-top: 25px;
+    display: inline-block;
+    background-color: #11384e;
+    padding: 10px 22px;
+    border-radius: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 1px solid #0b6bd6;
+  }
+  
+  .back-btn:hover {
+    background-color: #0b6bd6;
+    transform: translateY(-2px);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #03091b;
+  }
+  

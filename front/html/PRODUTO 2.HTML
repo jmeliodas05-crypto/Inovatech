@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto 2</title>
+    <link rel="stylesheet" href="../css/produto1.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">Inova<span>tech</span></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/projeto/html/projeto%20(2).html#Inicio">Início</a></li>
+                    <li><a href="http://127.0.0.1:5500/projeto/html/projeto%20(2).html#sobre">Sobre</a></li>
+                    <li><a href="http://127.0.0.1:5500/projeto/html/projeto%20(2).html#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="../HTML/Login.html" class="btn-nav">Login</a>
+                    <a href="../HTML/cadastro.html" class="btn-nav btn-outline">Cadastro</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+        <section class="product-container">
+            <div class="product-image">
+                <img src="../img/note-14-pro-5g-cores (1).webp" alt="Redmi Note Pro 14 5g" >
+            </div>
+
+            <div class="product-info">
+                <h2>Xiaomi Redmi Note 14 Pro 5g</h2>
+                <p>
+                    Descubra uma nova experiência com o Redmi Note 14 Pro! Desempenho poderoso, câmera incrível e bateria que acompanha seu ritmo o dia todo. Ele foi feito para quem quer mais velocidade, mais qualidade e mais liberdade para criar, trabalhar e se divertir. Eleve o seu dia a dia a outro nível — escolha o smartphone que entrega muito mais do que promete.
+                </p>
+
+                <ul class="features">
+                    <li>XIAOMI</li>
+                    <li>Android 14</li>
+                    <li>8 GB</li>
+                    <li>1.2GHz Cortex A8 Processor</li>
+                    <li>3 GHz</li>
+                </ul>
+
+                <p class="price">R$ 2.199,99</p>
+
+                <a href="../html/pagamentos2.html" class="buy-btn">Comprar Agora</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <h3>Sobre a Empresa</h3>
+                <p>
+                    Desenvolvemos soluções digitais modernas, criativas e eficientes.
+                    Nosso objetivo é entregar qualidade e inovação em cada projeto.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h3 id="contato">Contato</h3>
+                <p>Email: Inovatech@gmail.com</p>
+                <p>Telefone: (61) 98546-2555</p>
+                <p>Endereço: Asa sul / 903 Sul</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Ofertas</h3>
+                <p>Receba novidades e ofertas especiais no seu e-mail.</p>
+                <form>
+                    <input type="email" placeholder="Seu e-mail">
+                    <button type="submit">Inscrever</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Inovatech — Termos & Política</p>
+            <nav class="footer-nav">
+                <a href="../html/privacidade.html">Privacidade</a>
+                <a href="../html/privacidade.html">Termos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

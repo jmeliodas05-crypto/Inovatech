@@ -1,0 +1,216 @@
+/* ==========================
+   RESET / BASE
+   ========================== */
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #180a31;
+    color: #333;
+}
+
+img { max-width: 100%; display: block; }
+
+a { text-decoration: none; }
+
+.container { width: 95%; max-width: 1300px; margin: auto; }
+
+/* ==========================
+   HEADER
+   ========================== */
+.site-header {
+    background-color: #062b44;
+    color: #fff;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+}
+.logo span {
+    color: #1a73e8;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    padding: 0;
+}
+
+.main-nav a {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    color: #1a73e8;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 25px;
+}
+
+.btn-nav {
+    padding: 8px 14px;
+    background-color: #1a73e8;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #1a73e8;
+}
+
+.btn-nav:hover {
+    background-color: #155fc1;
+}
+.btn-outline:hover {
+    background-color: #1a73e8;
+}
+
+/* ==========================
+   MAIN / PRODUTO
+   ========================== */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #2e3c69;
+    padding: 30px;
+    border-radius: 12px;
+    color: #fff;
+    gap: 30px;
+}
+
+.product-image img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.product-info h2 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.product-info p { line-height: 1.6; }
+
+.features { margin: 18px 0; padding-left: 18px; }
+.features li { margin-bottom: 6px; }
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1a73e8;
+    margin: 20px 0;
+}
+
+.buy-btn {
+    background-color: #1a73e8;
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    transition: .3s;
+}
+
+.buy-btn:hover {
+    background-color: #155fc1;
+}
+
+/* ==========================
+   FOOTER
+   ========================== */
+.footer {
+    background-color: #1a1a1a;
+    color: #dcdcdc;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.footer-col { flex: 1; min-width: 250px; }
+.footer-col h3 { color: #fff; font-size: 22px; margin-bottom: 12px; }
+.footer-col ul { list-style: none; padding: 0; }
+.footer-col ul li { margin-bottom: 6px; }
+
+.footer-col ul li a { color: #bbb; }
+.footer-col ul li a:hover { color: #1a73e8; }
+
+.footer-col input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: none;
+}
+
+.footer-col button {
+    padding: 10px;
+    border: none;
+    background-color: #2577a7;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-col button:hover {
+    background-color: #1a73e8;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #303030;
+    margin-top: 35px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.footer-nav a {
+    margin: 0 8px;
+    color: #cfe9ff;
+}
+
+.footer-nav a:hover {
+    color: #1a73e8;
+}
+
+/* ==========================
+   RESPONSIVO
+   ========================== */
+@media (max-width: 860px) {
+    .header-inner { flex-direction: column; gap: 15px; }
+    .main-nav ul { flex-direction: column; gap: 12px; }
+    .auth-buttons { margin-left: 0; }
+}
+
+@media (max-width: 768px) {
+    .product-container { flex-direction: column; text-align: center; }
+    .product-image img { width: 100%; }
+}
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho</title>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../css/teste4.css">
+
+    <!-- CSS do carrinho -->
+    <link rel="stylesheet" href="../css/Carrinho.css">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header style="background:#062b44; padding:15px; color:white; display:flex; justify-content:space-between; align-items:center;">
+        <h2 style="margin:0;">Meu Carrinho</h2>
+
+        <div onclick="abrirCarrinho()" 
+             style="cursor:pointer; font-size:26px; color:#cfe9ff;">
+            🛒
+        </div>
+    </header>
+
+    
+    <!-- PRODUTO DE EXEMPLO -->
+    <main style="padding:20px; max-width:400px;">
+
+        <div style="background:#021827; border:2px solid #0b6bd6; padding:20px; border-radius:12px;">
+
+            <h3 style="color:#cfe9ff; font-family:Poppins;">Fone de Ouvido Bluetooth</h3>
+
+            <p style="color:#91d4ff; font-family:Poppins;">Preço: R$ 199,00</p>
+
+            <!-- AQUI ESTÁ O BOTÃO ARRUMADO -->
+            <button class="btn-produto" onclick="adicionarCarrinho('Fone de Ouvido Bluetooth', 199,00)">
+                Adicionar ao Carrinho
+            </button>
+
+        </div>
+
+    </main>
+
+<!-- PRODUTO DE EXEMPLO -->
+<main style="padding:20px; max-width:400px;">
+
+    <div style="background:#021827; border:2px solid #0b6bd6; padding:20px; border-radius:12px;">
+
+        <h3 style="color:#cfe9ff; font-family:Poppins;">Liquidificador</h3>
+
+        <p style="color:#91d4ff; font-family:Poppins;">Preço: R$ 1528,99</p>
+
+        <!-- AQUI ESTÁ O BOTÃO ARRUMADO -->
+        <button class="btn-produto" onclick="adicionarCarrinho('Liquidificador', 1528,99)">
+            Adicionar ao Carrinho
+        </button>
+
+    </div>
+
+</main>
+
+<main style="padding:20px; max-width:400px;">
+
+    <div style="background:#021827; border:2px solid #0b6bd6; padding:20px; border-radius:12px;">
+
+        <h3 style="color:#cfe9ff; font-family:Poppins;">Relógio Esportivo</h3>
+
+        <p style="color:#91d4ff; font-family:Poppins;">Preço: R$ 2.534,00</p>
+
+        <!-- AQUI ESTÁ O BOTÃO ARRUMADO -->
+        <button class="btn-produto" onclick="adicionarCarrinho('Relógio Esportivo',2534,00)">
+            Adicionar ao Carrinho
+        </button>
+
+    </div>
+
+</main>
+
+
+<main style="padding:20px; max-width:400px;">
+
+    <div style="background:#021827; border:2px solid #0b6bd6; padding:20px; border-radius:12px;">
+
+        <h3 style="color:#cfe9ff; font-family:Poppins;">Smartphone X</h3>
+
+        <p style="color:#91d4ff; font-family:Poppins;">Preço: R$ 2.199,99</p>
+
+        <!-- AQUI ESTÁ O BOTÃO ARRUMADO -->
+        <button class="btn-produto" onclick="adicionarCarrinho('Smartphone X', 2199,99)">
+            Adicionar ao Carrinho
+        </button>
+
+    </div>
+
+   
+
+
+</main>
+
+
+    <!-- =================== CARRINHO LATERAL =================== -->
+    <div id="carrinho" class="cart-panel">
+        <button id="fechar" class="close-btn" onclick="fecharCarrinho()">✕</button>
+
+        <h2 class="cart-title">Carrinho</h2>
+                                                                                   
+        <ul id="lista-carrinho" class="cart-list"></ul>
+
+        <p id="total" class="cart-total"></p>
+
+        <button id="btn-comprar" class="buy-btn"
+        onclick="window.location.href='../html/pagamentoc.html'">
+        Finalizar Compra
+        </button>
+
+    </div>
+
+    <script src="../js/teste.js"></script>
+</body>
+</html>

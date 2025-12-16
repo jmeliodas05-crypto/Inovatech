@@ -1,0 +1,62 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Fundo escuro do projeto */
+body {
+    background-color: #021827;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #cfe9ff;
+}
+
+/* Caixa central */
+.process-box {
+    background: #041a33;
+    padding: 40px;
+    width: 380px;
+    text-align: center;
+    border-radius: 14px;
+    border: 2px solid #0b6bd6;
+    box-shadow: 0 0 18px #0b6bd677;
+}
+
+/* Título */
+.process-box h1 {
+    margin-top: 18px;
+    font-size: 24px;
+    color: #0b6bd6;
+}
+
+/* Texto menor */
+.process-box p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Texto informativo */
+.info {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Loader animado */
+.loader {
+    border: 5px solid #0b6bd6;
+    border-top: 5px solid #041a33;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+    animation: spin 1s linear infinite;
+}
+
+/* Animação */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

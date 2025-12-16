@@ -1,0 +1,23 @@
+/* Botão dos produtos */
+.btn-produto {
+    background-color: #021827;
+    border: 2px solid #0b6bd6;
+    color: #cfe9ff;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.25s ease;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Hover */
+  .btn-produto:hover {
+    background-color: #0b6bd6;
+    color: #ffffff;
+    border-color: #1e2f8f;
+  }

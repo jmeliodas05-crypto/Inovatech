@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processando Pagamento</title>
+    <link rel="stylesheet" href="../css/procssamento.css">
+</head>
+<body>
+
+    <div class="process-box">
+        <div class="loader"></div>
+
+        <h1>Processando Pagamento...</h1>
+        <p>Aguarde um instante enquanto confirmamos sua transação.</p>
+
+        <p class="info">Você será redirecionado automaticamente.</p>
+    </div>
+
+    <script>
+        // redireciona após 3 segundos
+        setTimeout(() => {
+            window.location.href = "../html/APROVADO.html";
+        }, 5000);
+    </script>
+    
+
+</body>
+</html>

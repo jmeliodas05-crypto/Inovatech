@@ -1,0 +1,132 @@
+/* Reset leve */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; }
+
+:root{
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --danger: #dc2626;
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(16,24,40,0.08);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color-scheme: light;
+}
+
+/* Layout */
+body {
+  background: linear-gradient(180deg, #eef2ff 0%, var(--bg) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  font-size: 16px;
+  color: #0f172a;
+}
+
+/* Checkout container */
+.checkout {
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Card */
+.checkout-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 28px;
+  padding: 28px;
+}
+
+/* Mobile */
+@media (max-width: 880px) {
+  .checkout-card { grid-template-columns: 1fr; padding: 20px; }
+}
+
+/* Headings */
+.checkout-card h1 { font-size: 22px; margin-bottom: 6px; }
+.subtitle { color: var(--muted); margin-bottom: 18px; }
+
+/* Form */
+.form { display: contents; } /* permite fields + aside to sit in grid */
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+
+/* Labels & inputs */
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 8px;
+  border: 1px solid #e6e9ef;
+  background: #fff;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 12px;
+  transition: box-shadow .12s, border-color .12s;
+}
+input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 6px 18px rgba(37,99,235,0.08);
+}
+
+/* Row layout for small groups */
+.row { display: flex; gap: 12px; }
+.col { flex: 1; }
+
+/* Summary (aside) */
+.summary {
+  background: linear-gradient(180deg, rgba(37,99,235,0.03), rgba(37,99,235,0.01));
+  border-radius: 10px;
+  padding: 18px;
+  height: fit-content;
+  align-self: start;
+  border: 1px solid rgba(15,23,42,0.04);
+}
+.summary h2 { font-size: 16px; margin-bottom: 12px; }
+.summary-row { display:flex; justify-content:space-between; align-items:center; margin:8px 0; color:var(--muted); }
+.summary-row.total { font-weight:700; color: #0f172a; margin-top: 14px; font-size: 16px; }
+
+.pay-btn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg,var(--accent), #1d4ed8);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(37,99,235,0.16);
+}
+.pay-btn:active { transform: translateY(1px); }
+
+/* Small helper text */
+.small { font-size: 13px; color: var(--muted); margin-top: 8px; }
+
+/* Acessibilidade: foco visível */
+input:focus, .pay-btn:focus, button:focus { outline: 3px solid rgba(37,99,235,0.16); outline-offset: 2px; }
+
+/* Erros (exemplo, sem JS não aparece automaticamente) */
+.error { border-color: var(--danger); }
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 420px) {
+  input { padding: 10px; font-size: 15px; }
+  .checkout-card { padding: 16px; gap: 18px; }
+}
